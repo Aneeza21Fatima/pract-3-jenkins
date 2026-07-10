@@ -1,0 +1,27 @@
+1) install Jenkins
+2) http://localhost:8080 or 8081
+3)Created a Jenkins Job
+Clicked New Item.
+Created a Freestyle Project named:
+HelloWebApp
+4) Connected Jenkins to GitHub
+Source Code Management → Git
+https://github.com/Aneeza21Fatima/pract-3-jenkins
+5) Configured Deployment Build Step
+Build Steps → Execute Windows batch command
+6) Add commands
+mkdir C:\Deploy\HelloWebApp 2>nul
+xcopy * C:\Deploy\HelloWebApp /E /Y
+7)Build Now
+jenkins:
+Cloned the GitHub repository.
+Checked out your code.
+Executed the deployment script.
+Copied index.html.
+7)Verified Build Success
+1 File(s) copied
+Finished: SUCCESS
+8) Verified Deployment
+C:\Deploy\HelloWebApp
+
+
